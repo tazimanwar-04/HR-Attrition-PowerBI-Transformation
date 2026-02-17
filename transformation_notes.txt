@@ -1,0 +1,46 @@
+Task 12 – Data Transformation using Power Query
+
+Dataset Used: HR Analytics Dataset
+
+Transformations Performed:
+
+1. Removed unnecessary columns:
+   - EmployeeCount
+   - EmployeeNumber
+   - Over18
+   - StandardHours
+
+2. Corrected Data Types:
+   - Numeric columns converted to Whole Number.
+   - Attrition converted to Text.
+   - MonthlyIncome set to Whole Number.
+
+3. Created Conditional Columns:
+   - Age Group:
+        Young (<=25)
+        Mid Age (26–40)
+        Senior (>40)
+
+   - Attrition Flag:
+        Yes = 1
+        No = 0
+
+   - Salary Band:
+        Low Salary (<=4000)
+        Medium Salary (<=8000)
+        High Salary (>8000)
+
+4. Created Measures:
+   - Total Employees (Count of Age)
+   - Employees Left (Sum of Attrition Flag)
+   - Attrition Rate = Employees Left / Total Employees
+   - Average Salary (Average of MonthlyIncome)
+
+5. Built Dashboard with:
+   - KPI Cards
+   - Attrition by Department
+   - Attrition by Age Group
+   - Slicers for Department, Gender, Age Group
+
+Final Outcome:
+Interactive HR Attrition Dashboard with proper data transformation.
